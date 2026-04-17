@@ -40,24 +40,31 @@
         .content {
             padding: 25px;
         }
-        /* --- ГАРЧИГ БОЛОН ЛОГОНЫ ЗАСВАР --- */
-        h2 {
-            color: #2c3e50;
-            font-size: 1.2em; /* Текстээ арай жижиг болгож логонд зай гаргав */
-            margin-top: 0;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
+        
+        /* --- ЛОГОГ ЗӨВ ХЭМЖЭЭНД ОРУУЛАХ ХЭСЭГ --- */
+        .header-section {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start; /* Текст болон логог дээд талаар нь зэрэгцүүлнэ */
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
             gap: 15px;
         }
-        .school-logo {
-            max-width: 40px;  /* Хэмжээг нь эндээс тохируулна */
-            height: auto;
-            flex-shrink: 0;
+        h2 {
+            color: #2c3e50;
+            font-size: 1.15em; /* Текстийн хэмжээг бага зэрэг тохирууллаа */
+            margin: 0;
+            line-height: 1.4;
+            text-transform: uppercase;
         }
-        /* ---------------------------------- */
+        .school-logo {
+            width: 85px; /* Логоны өргөн - таны дугуйлсан хэмжээнд дөхүүлэв */
+            height: auto;
+            flex-shrink: 0; /* Шахагдахаас хамгаална */
+        }
+        /* -------------------------------------- */
+
         .stats {
             background: #e1f5fe;
             padding: 15px;
@@ -80,10 +87,10 @@
     </div>
 
     <div class="content">
-        <h2>
-            <span>ДОРНОГОВЬ АЙМГИЙН ЗАМЫН-ҮҮД СУМЫН ЕРӨНХИЙ БОЛОВСРОЛЫН 1-ДҮГЭЭР СУРГУУЛИЙН ДОТУУР БАЙРНЫ "ХҮҮХЭД ХӨГЖИЛИЙН ТАНХИМ"-ЫН ТӨСӨЛ</span>
+        <div class="header-section">
+            <h2>ДОРНОГОВЬ АЙМГИЙН ЗАМЫН-ҮҮД СУМЫН ЕРӨНХИЙ БОЛОВСРОЛЫН 1-ДҮГЭЭР СУРГУУЛИЙН ДОТУУР БАЙРНЫ "ХҮҮХЭД ХӨГЖИЛИЙН ТАНХИМ"-ЫН ТӨСӨЛ</h2>
             <img src="667801189_3304240379747905_6415483371061264348_n.png"school-logo">
-        </h2>
+        </div>
         
         <div class="stats">
             Нийт төсөвт өртөг: 10.888.000₮
